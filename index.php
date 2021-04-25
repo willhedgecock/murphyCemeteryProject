@@ -29,8 +29,8 @@ if (isset($_COOKIE['rememberme']) && !empty($_COOKIE['rememberme'])) {
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,minimum-scale=1">
 		<title>Login</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link href="nav.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/nav.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body>
@@ -38,7 +38,7 @@ if (isset($_COOKIE['rememberme']) && !empty($_COOKIE['rememberme'])) {
         <input type="checkbox" id="nav-toggle">
         <div class="logo">Murphy Cemetery</div>
         <ul class="links">
-            <li><a href="murphy-cemetery.html">Home</a></li>
+            <li><a href="tpl/murphy-cemetery.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
