@@ -8,9 +8,9 @@ check_loggedin($pdo);
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,minimum-scale=1">
 		<title>Murphy Cemetery</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link href="nav.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="structure.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/nav.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/structure.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body class="loggedin">
