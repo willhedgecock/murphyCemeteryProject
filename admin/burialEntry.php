@@ -103,7 +103,7 @@ if (isset($_GET['burial_ID'])) {
         <label for="burial_interment_year">Interment Year</label>
         <input type="number" maxlength="4" id="burial_interment_year" name="burial_interment_year" placeholder="Interment Year" value="<?=$burialEntries['burial_interment_year']?>">
         
-        <div class="veteran">
+        <div id="veteran">
             <label for="burial_veteran">Was a Veteran? y/n</label>
             <input type="text" maxlength="1" id="burial_veteran" name="burial_veteran" placeholder="Veteran" value="<?=$burialEntries['burial_veteran']?>">
             <label for="burial_veteran_branch">Veteran Branch</label>
