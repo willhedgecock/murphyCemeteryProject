@@ -143,7 +143,7 @@ body {
 }
 
 body.loggedin {
-  background-color: #f3f4f7;
+  background-color: #F7F7F7;
 }
 
 .content {
@@ -155,8 +155,8 @@ body.loggedin {
   margin: 0;
   padding: 25px 0;
   font-size: 22px;
-  border-bottom: 1px solid #e0e0e3;
-  color: #4a536e;
+  border-bottom: 1px solid #e3e3e3;
+  color: #5e5e5e;
 }
 
 .content .block {
@@ -178,7 +178,7 @@ body.loggedin {
 
 .content .block table td:first-child {
   font-weight: bold;
-  color: #4a536e;
+  color: #5e5e5e;
   padding-right: 15px;
 }
 

@@ -8,7 +8,8 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 5%;
   height: 100px;
-  background-color: #3e65da;
+  background-color: #DCE8B0;
+  color: #343633;
 }
 
 nav .logo {
@@ -22,7 +23,7 @@ nav .logo {
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
-  color: #fff;
+  color: #343633;
 }
 
 nav .links {
@@ -50,8 +51,10 @@ nav .links a {
   padding: 1em;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #343633;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #nav-toggle {
@@ -71,7 +74,7 @@ nav .icon-burger {
 nav .icon-burger .line {
   width: 30px;
   height: 5px;
-  background-color: #fff;
+  background-color: black;
   margin: 5px;
   border-radius: 3px;
   -webkit-transition: all .3s ease-in-out;
@@ -110,6 +113,7 @@ nav .icon-burger .line {
   }
   nav .links a {
     font-size: 20px;
+    color: #fff;
   }
   nav :checked ~ .links {
     bottom: 0;

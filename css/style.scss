@@ -7,7 +7,7 @@ $login-header-color: #5b6574;
 $login-border-color: #dee0e4;
 $login-button-background-color: #3274d6;
 $login-button-color: #ffffff;
-$loggedin-background-color: #f3f4f7;
+$loggedin-background-color: #F7F7F7;
 $content-width: 1000px;
 * {
 	box-sizing: border-box;
@@ -181,6 +181,9 @@ body.loggedin {
 		}
 	}
 }
+
+
+
 @media screen and (max-width: $login-width) {
 	.login, .register {
 		width: 95%;
