@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Murphy Cemetery</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+		<link href="../css/nav.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../css/structure.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body class="loggedin">
+        <div class="wrapper">
+            
+	<nav>
+        <input type="checkbox" id="nav-toggle">
+        <div class="logo">Murphy Cemetery</div>
+        <ul class="links">
+            <li><a href="murphy-cemetery.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#findAGrave">Find a Grave</a></li>
+			<a href="../index.php">Login</a>
+			
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+   
+   
+		<section class="row">
+            
+                <div class="imageBackground">
+                <h1>Home Page</h1>
+                </div>
+            
+        </section>
+        <section class="row">
+            <div class="column">
+                <form action="contact.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="department-selection">Choose Reason For Contacting Us</label>
+    <select id="department-selection" name="reason_for_contact" required>
+        <option value="">-- select one --</option>
+        <option value="Buy Plot">Buy a Plot</option>
+        <option value="Schedule a Service">Schedule a Service</option>
+        <option value="Other">Other</option>
+    </select>
+  </div>
+  
+  <div class="elem-group">
+    <label for="message">Write your message</label>
+    <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+  </div>
+  <button type="submit">Send Message</button>
+   <button type="reset">Reset</button>
+</form>
+            </div>
+        </section>
+			
+
+        </div>
+	</body>
+</html>
