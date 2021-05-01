@@ -10,6 +10,9 @@ nav {
   height: 100px;
   background-color: #DCE8B0;
   color: #343633;
+  border: #343633 solid 1px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 nav .logo {

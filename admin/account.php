@@ -9,7 +9,7 @@ $account = array(
     'rememberme' => '',
     'role' => 'Member'
 );
-$roles = array('Member', 'Admin');
+$roles = array('Admin');
 if (isset($_GET['id'])) {
     // Get the account from the database
     $stmt = $pdo->prepare('SELECT * FROM accounts WHERE id = ?');
@@ -57,10 +57,13 @@ if (isset($_GET['id'])) {
         <input type="text" id="password" name="password" placeholder="Password" value="<?=$account['password']?>" required>
         <label for="email">Email</label>
         <input type="text" id="email" name="email" placeholder="Email" value="<?=$account['email']?>" required>
-        <label for="activation_code">Activation Code</label>
-        <input type="text" id="activation_code" name="activation_code" placeholder="Activation Code" value="<?=$account['activation_code']?>">
-        <label for="rememberme">Remember Me Code</label>
-        <input type="text" id="rememberme" name="rememberme" placeholder="Remember Me Code" value="<?=$account['rememberme']?>">
+        
+        <!-- <label for="activation_code">Activation Code</label>
+        <input type="text" id="activation_code" name="activation_code" placeholder="Activation Code" value="<?=$account['activation_code']?>"> -->
+
+        <!-- <label for="rememberme">Remember Me Code</label>
+        <input type="text" id="rememberme" name="rememberme" placeholder="Remember Me Code" value="<?=$account['rememberme']?>"> -->
+        
         <label for="role">Role</label>
         <select id="role" name="role" style="margin-bottom: 30px;">
             <?php foreach ($roles as $role): ?>
