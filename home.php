@@ -23,7 +23,7 @@ check_loggedin($pdo);
             <li><a href="home.php">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#findAGrave">Find a Grave</a></li>
 			<li><a href="logout.php">Logout</a></li>
 			<li><a href="admin/index.php" target="_blank">Admin</a></li>
