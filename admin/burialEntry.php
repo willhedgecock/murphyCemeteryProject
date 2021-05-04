@@ -1,6 +1,7 @@
 <?php
 include 'main.php';
-// Default input account values
+
+// Default input burial values
 $burialEntries = array(
     'burial_first_name' => '',
     'burial_middle_name' => '',
@@ -41,24 +42,24 @@ if (isset($_GET['burial_ID'])) {
     $stmt = $pdo->prepare('SELECT * FROM murphyburials WHERE burial_ID = ?');
     $stmt->execute([ $_GET['burial_ID'] ]);
     $burialEntries = $stmt->fetch(PDO::FETCH_ASSOC);
-    // burial_ID param exists, edit an existing account
+    // burial_ID param exists, edit an existing Burial
     $page = 'Edit';
     if (isset($_POST['submit'])) {
-        // Update the account
+        // Update the burial
         $stmt = $pdo->prepare('UPDATE murphyburials SET burial_first_name = ?, burial_middle_name = ?, burial_last_name = ?, burial_DOB = ?, burial_birth_year = ?, burial_birthplace_city = ?, burial_birthplace_st = ?, burial_date_of_death = ?, burial_death_year = ?, burial_plot_row = ?, burial_plot_number = ?, burial_interment_date = ?, burial_interment_year = ?, burial_veteran = ?, burial_veteran_branch = ?, burial_veteran_rank = ?, burial_veteran_service_time = ?, burial_spouse_first_name = ?, burial_spouse_middle_name = ?, burial_spouse_last_name = ?, burial_children_names = ?, burial_mother_first_name = ?, burial_mother_middle_name = ?, burial_mother_last_name = ?, burial_father_first_name = ?, burial_father_middle_name = ?, burial_father_last_name = ?, burial_img_deceased = ?, burial_img_grave1 = ?, burial_img_grave2 = ?, burial_obituary = ?, burial_family_notes = ? WHERE burial_ID = ?');
         $stmt->execute([ $_POST['burial_first_name'], $_POST['burial_middle_name'], $_POST['burial_last_name'], $_POST['burial_DOB'], $_POST['burial_birth_year'], $_POST['burial_birthplace_city'], $_POST['burial_birthplace_st'], $_POST['burial_date_of_death'], $_POST['burial_death_year'], $_POST['burial_plot_row'], $_POST['burial_plot_number'], $_POST['burial_interment_date'], $_POST['burial_interment_year'], $_POST['burial_veteran'], $_POST['burial_veteran_branch'], $_POST['burial_veteran_rank'], $_POST['burial_veteran_service_time'], $_POST['burial_spouse_first_name'], $_POST['burial_spouse_middle_name'], $_POST['burial_spouse_last_name'], $_POST['burial_children_names'], $_POST['burial_mother_first_name'], $_POST['burial_mother_middle_name'], $_POST['burial_mother_last_name'], $_POST['burial_father_first_name'], $_POST['burial_father_middle_name'], $_POST['burial_father_last_name'], $_POST['burial_img_deceased'], $_POST['burial_img_grave1'], $_POST['burial_img_grave2'], $_POST['burial_obituary'], $_POST['burial_family_notes'], $_GET['burial_ID'] ]);
         header('Location: burialIndex.php');
         exit;
     }
     if (isset($_POST['delete'])) {
-        // Delete the account
+        // Delete the burial
         $stmt = $pdo->prepare('DELETE FROM murphyburials WHERE burial_ID = ?');
         $stmt->execute([ $_GET['burial_ID'] ]);
         header('Location: burialIndex.php');
         exit;
     }
 } else {
-    // Create a new account
+    // Create a new burial
     $page = 'Create';
     if (isset($_POST['submit'])) {
         $stmt = $pdo->prepare('INSERT IGNORE INTO murphyburials (burial_first_name,burial_middle_name,burial_last_name,burial_DOB,burial_birth_year,burial_birthplace_city,burial_birthplace_st,burial_date_of_death,burial_death_year,burial_plot_row,burial_plot_number,burial_interment_date,burial_interment_year,burial_veteran, burial_veteran_branch,burial_veteran_rank,burial_veteran_service_time, burial_spouse_first_name,burial_spouse_middle_name,burial_spouse_last_name,burial_children_names,burial_mother_first_name,burial_mother_middle_name,burial_mother_last_name,burial_father_first_name,burial_father_middle_name,burial_father_last_name,burial_img_deceased,burial_img_grave1,burial_img_grave2,burial_obituary,burial_family_notes) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
@@ -67,7 +68,9 @@ if (isset($_GET['burial_ID'])) {
         exit;
     }
 }
+
 ?>
+
 
 <?=template_admin_header($page . ' Account')?>
 
@@ -78,7 +81,7 @@ if (isset($_GET['burial_ID'])) {
         <label for="burial_first_name">First Name</label>
         <input type="text" id="burial_first_name" name="burial_first_name" placeholder="First Name" value="<?=$burialEntries['burial_first_name']?>" required>
         <label for="burial_middle_name">Middle Name</label>
-        <input type="text" id="burial_middle_name" name="burial_middle_name" placeholder="Middle Name" value="<?=$burialEntries['burial_middle_name']?>" required>
+        <input type="text" id="burial_middle_name" name="burial_middle_name" placeholder="Middle Name" value="<?=$burialEntries['burial_middle_name']?>">
         <label for="burial_last_name">Last Name</label>
         <input type="text" id="burial_last_name" name="burial_last_name" placeholder="Last Name" value="<?=$burialEntries['burial_last_name']?>" required>
         <label for="burial_DOB">Date Of Birth</label>
@@ -134,12 +137,14 @@ if (isset($_GET['burial_ID'])) {
         <input type="text" id="burial_father_middle_name" name="burial_father_middle_name" placeholder="Fathers Middle Name" value="<?=$burialEntries['burial_father_middle_name']?>">
         <label for="burial_father_last_name">Fathers Last Name</label>
         <input type="text" id="burial_father_last_name" name="burial_father_last_name" placeholder="Fathers Last Name" value="<?=$burialEntries['burial_father_last_name']?>">
+        <!--start of images-->
         <label for="burial_img_deceased">Image Of Deceased</label>
-        <input type="text" id="burial_img_deceased" name="burial_img_deceased" placeholder="Image of Deceased" value="<?=$burialEntries['burial_img_deceased']?>">
+        <input type="file" id="burial_img_deceased" name="burial_img_deceased" placeholder="Image of Deceased" value="<?=$burialEntries['burial_img_deceased']?>">
         <label for="burial_img_grave1">Picture Of Grave #1</label>
-        <input type="text" id="burial_img_grave1" name="burial_img_grave1" placeholder="Picture Of Grave #1" value="<?=$burialEntries['burial_img_grave1']?>">
+        <input type="file" id="burial_img_grave1" name="burial_img_grave1" placeholder="Picture Of Grave #1" value="<?=$burialEntries['burial_img_grave1']?>">
         <label for="burial_img_grave2">Picture Of Grave #2</label>
-        <input type="text" id="burial_img_grave2" name="burial_img_grave2" placeholder="Pictures Of Grave #2" value="<?=$burialEntries['burial_img_grave2']?>">
+        <input type="file" id="burial_img_grave2" name="burial_img_grave2" placeholder="Pictures Of Grave #2" value="<?=$burialEntries['burial_img_grave2']?>">
+        <!--end of images-->
         <label for="burial_obituary">Burial Obituary</label>
         <input type="text" id="burial_obituary" name="burial_obituary" placeholder="Burial Obituary" value="<?=$burialEntries['burial_obituary']?>">
         <label for="burial_family_notes">Burial Family Notes</label>
