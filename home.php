@@ -21,7 +21,7 @@ check_loggedin($pdo);
         <div class="logo">Murphy Cemetery</div>
         <ul class="links">
             <li><a href="home.php">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="about.php">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="#findAGrave">Find a Grave</a></li>
@@ -69,7 +69,7 @@ check_loggedin($pdo);
            
            <div class="column">
                <h2>Contact Us Today!</h2>
-               <div class="callToAction"><a href=""><button>Contact</button></a></div>
+               <a href="contact.html" class="myButton">Contact</a>
            </div>
            
                 
@@ -78,6 +78,26 @@ check_loggedin($pdo);
 
         <!--footer start-->
         <footer class="row">
+            <div class="column">
+            
+        <div class="footerNav">
+            <a href="home.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="#services">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="#findAGrave">Find a Grave</a>
+    		<a href="logout.php">Logout</a>
+    		<a href="admin/index.php" target="_blank">Admin</a>
+        </div>
+			
+        
+            </div>
+            <div class="column">
+                <h3>Murphy Cemetery</h3>
+                <p>Nevada, IA 50201</p>
+                <p>Lat:   42.0569°   (42° 3' 24")</p>
+                <p>Lon:   -93.3674°   (-93° 22' 2")</p>
+            </div>
             <div class="column">
 
             </div>

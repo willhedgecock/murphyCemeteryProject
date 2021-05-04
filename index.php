@@ -73,6 +73,7 @@ if (isset($_COOKIE['rememberme']) && !empty($_COOKIE['rememberme'])) {
 				<div class="msg"></div>
 				<input type="submit" value="Login">
 			</form>
+			
 		</div>
 		<script>
         document.querySelector(".login form").onsubmit = function(event) {
