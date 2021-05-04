@@ -38,12 +38,12 @@ if (isset($_COOKIE['rememberme']) && !empty($_COOKIE['rememberme'])) {
         <input type="checkbox" id="nav-toggle">
         <div class="logo">Murphy Cemetery</div>
         <ul class="links">
-            <li><a href="tpl/murphy-cemetery.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="tpl/home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#findAGrave">Find a Grave</a></li>
-			<a href="index.php">Login</a>
+            <li><a href="find-grave.php">Find a Grave</a></li>
+			<li><a href="index.php">Login</a></li>
 			
         </ul>
         <label for="nav-toggle" class="icon-burger">

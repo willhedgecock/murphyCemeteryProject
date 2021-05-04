@@ -21,10 +21,10 @@ check_loggedin($pdo);
         <div class="logo">Murphy Cemetery</div>
         <ul class="links">
             <li><a href="home.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#findAGrave">Find a Grave</a></li>
+            <li><a href="find-grave.php">Find a Grave</a></li>
 			<li><a href="logout.php">Logout</a></li>
 			<li><a href="admin/index.php" target="_blank">Admin</a></li>
 			
@@ -82,10 +82,10 @@ check_loggedin($pdo);
             
         <div class="footerNav">
             <a href="home.php">Home</a>
-            <a href="about.php">About</a>
-            <a href="#services">Services</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
-            <a href="#findAGrave">Find a Grave</a>
+            <a href="find-grave.php">Find a Grave</a>
     		<a href="logout.php">Logout</a>
     		<a href="admin/index.php" target="_blank">Admin</a>
         </div>
