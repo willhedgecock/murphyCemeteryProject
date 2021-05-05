@@ -52,12 +52,12 @@ if (strpos($sql, "burial_first_name", -21)) {
         <input type="checkbox" id="nav-toggle">
         <div class="logo">Murphy Cemetery</div>
         <ul class="links">
-            <li><a href="murphy-cemetery.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#findAGrave">Find a Grave</a></li>
-			<a href="index.php">Login</a>
+        <li><a href="tpl/home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="find-grave.php">Find a Grave</a></li>
+          <li><a href="index.php">Login</a></li>
 			
         </ul>
         <label for="nav-toggle" class="icon-burger">
@@ -125,9 +125,40 @@ if (strpos($sql, "burial_first_name", -21)) {
             <?php }} ?>
         
         </section>
+        <section class="row">
+           
+           <div class="column">
+               <h2>Contact Us Today!</h2>
+               <a href="contact.html" class="myButton">Contact</a>
+           </div>
+           
+                
+        
+        </section>
+
 
         <!--footer start-->
         <footer class="row">
+            <div class="column">
+            
+        <div class="footerNav">
+            <a href="tpl/home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="find-grave.php">Find a Grave</a>
+    		<a href="index.php">Login</a>
+    		
+        </div>
+			
+        
+            </div>
+            <div class="column">
+                <h3>Murphy Cemetery</h3>
+                <p>Nevada, IA 50201</p>
+                <p>Lat:   42.0569°   (42° 3' 24")</p>
+                <p>Lon:   -93.3674°   (-93° 22' 2")</p>
+            </div>
             <div class="column">
 
             </div>
