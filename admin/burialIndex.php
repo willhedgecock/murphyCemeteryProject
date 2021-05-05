@@ -18,39 +18,39 @@ $burialEntries = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <table>
             <thead>
                 <tr>
-                    <td>Burial_ID</td>
+                    <td class="responsive-hidden">Burial_ID</td>
                     <td>First Name</td>
-                    <td>Middle Name</td>
+                    <td class="responsive-hidden">Middle Name</td>
                     <td>Last Name</td>
-                    <td>Date Of Birth</td>
-                    <td>Birth Year</td>
-                    <td>Birthplace City</td>
-                    <td>Birthplace State</td>
-                    <td>Date Of Death</td>
-                    <td>Death Year</td>
-                    <td>Plot Row</td>
-                    <td>Plot Number</td>
-                    <td>Interment Date</td>
-                    <td>Interment Year</td>
-                    <td>Veteran</td>
-                    <td>Veteran Branch</td>
-                    <td>Veteran Rank</td>
-                    <td>Veteran Service Time</td>
-                    <td>Spouse First Name</td>
-                    <td>Spouse Middle Name</td>
-                    <td>Spouse Last Name</td>
-                    <td>Children Names</td>
-                    <td>Mother First Name</td>
-                    <td>Mother Middle Name</td>
-                    <td>Mother Last Name</td>
-                    <td>Father First Name</td>
-                    <td>Father Middle Name</td>
-                    <td>Father Last Name</td>
-                    <td>Image Of Deceased</td>
-                    <td>Grave Image #1</td>
-                    <td>Grave Image #2</td>
-                    <td>Obituary</td>
-                    <td>Family Notes</td>
+                    <td class="responsive-hidden">Date Of Birth</td>
+                    <td class="responsive-hidden">Birth Year</td>
+                    <td class="responsive-hidden">Birthplace City</td>
+                    <td class="responsive-hidden">Birthplace State</td>
+                    <td class="responsive-hidden">Date Of Death</td>
+                    <td class="responsive-hidden">Death Year</td>
+                    <td class="responsive-hidden">Plot Row</td>
+                    <td class="responsive-hidden">Plot Number</td>
+                    <td class="responsive-hidden">Interment Date</td>
+                    <td class="responsive-hidden">Interment Year</td>
+                    <td class="responsive-hidden">Veteran</td>
+                    <td class="responsive-hidden">Veteran Branch</td>
+                    <td class="responsive-hidden">Veteran Rank</td>
+                    <td class="responsive-hidden">Veteran Service Time</td>
+                    <td class="responsive-hidden">Spouse First Name</td>
+                    <td class="responsive-hidden">Spouse Middle Name</td>
+                    <td class="responsive-hidden">Spouse Last Name</td>
+                    <td class="responsive-hidden">Children Names</td>
+                    <td class="responsive-hidden">Mother First Name</td>
+                    <td class="responsive-hidden">Mother Middle Name</td>
+                    <td class="responsive-hidden">Mother Last Name</td>
+                    <td class="responsive-hidden">Father First Name</td>
+                    <td class="responsive-hidden">Father Middle Name</td>
+                    <td class="responsive-hidden">Father Last Name</td>
+                    <td class="responsive-hidden">Image Of Deceased</td>
+                    <td class="responsive-hidden">Grave Image #1</td>
+                    <td class="responsive-hidden">Grave Image #2</td>
+                    <td class="responsive-hidden">Obituary</td>
+                    <td class="responsive-hidden"Family Notes</td>
                 </tr>
             </thead>
             <tbody>
@@ -61,39 +61,39 @@ $burialEntries = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php else: ?>
                 <?php foreach ($burialEntries as $burialEntry): ?>
                 <tr class="details" onclick="location.href='burialEntry.php?burial_ID=<?=$burialEntry['burial_ID']?>'">
-                    <td><?=$burialEntry['burial_ID']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_ID']?></td>
                     <td><?=$burialEntry['burial_first_name']?></td>
-                    <td><?=$burialEntry['burial_middle_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_middle_name']?></td>
                     <td><?=$burialEntry['burial_last_name']?></td>
-                    <td><?=$burialEntry['burial_DOB']?></td>
-                    <td><?=$burialEntry['burial_birth_year']?></td>
-                    <td><?=$burialEntry['burial_birthplace_city']?></td>
-                    <td><?=$burialEntry['burial_birthplace_st']?></td>
-                    <td><?=$burialEntry['burial_date_of_death']?></td>
-                    <td><?=$burialEntry['burial_death_year']?></td>
-                    <td><?=$burialEntry['burial_plot_row']?></td>
-                    <td><?=$burialEntry['burial_plot_number']?></td>
-                    <td><?=$burialEntry['burial_interment_date']?></td>
-                    <td><?=$burialEntry['burial_interment_year']?></td>
-                    <td><?=$burialEntry['burial_veteran']?></td>
-                    <td><?=$burialEntry['burial_veteran_branch']?></td>
-                    <td><?=$burialEntry['burial_veteran_rank']?></td>
-                    <td><?=$burialEntry['burial_veteran_service_time']?></td>
-                    <td><?=$burialEntry['burial_spouse_first_name']?></td>
-                    <td><?=$burialEntry['burial_spouse_middle_name']?></td>
-                    <td><?=$burialEntry['burial_spouse_last_name']?></td>
-                    <td><?=$burialEntry['burial_children_names']?></td>
-                    <td><?=$burialEntry['burial_mother_first_name']?></td>
-                    <td><?=$burialEntry['burial_mother_middle_name']?></td>
-                    <td><?=$burialEntry['burial_mother_last_name']?></td>
-                    <td><?=$burialEntry['burial_father_first_name']?></td>
-                    <td><?=$burialEntry['burial_father_middle_name']?></td>
-                    <td><?=$burialEntry['burial_father_last_name']?></td>
-                    <td><?=$burialEntry['burial_img_deceased']?></td>
-                    <td><?=$burialEntry['burial_img_grave1']?></td>
-                    <td><?=$burialEntry['burial_img_grave2']?></td>
-                    <td><?=$burialEntry['burial_obituary']?></td>
-                    <td><?=$burialEntry['burial_family_notes']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_DOB']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_birth_year']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_birthplace_city']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_birthplace_st']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_date_of_death']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_death_year']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_plot_row']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_plot_number']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_interment_date']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_interment_year']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_veteran']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_veteran_branch']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_veteran_rank']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_veteran_service_time']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_spouse_first_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_spouse_middle_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_spouse_last_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_children_names']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_mother_first_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_mother_middle_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_mother_last_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_father_first_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_father_middle_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_father_last_name']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_img_deceased']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_img_grave1']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_img_grave2']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_obituary']?></td>
+                    <td class="responsive-hidden"><?=$burialEntry['burial_family_notes']?></td>
                     
                 </tr>
                 <?php endforeach; ?>
