@@ -78,7 +78,8 @@ if (strpos($sql, "burial_first_name", -21)) {
         </section>
         <section class="row">
             <div class="column">
-                <img src="images/murphyCemetery-7.jpg" alt="">
+                <img src="images/murphyCemetery-16.jpg" alt="Murphy cemetery front main entrance">
+                
             </div>
             <div class="column">
                 <p class="find-grave-heading">Here at Murphy Cemetery, we believe that you should be able to find all the information you need for your loved one. Use our burial search below.</p>

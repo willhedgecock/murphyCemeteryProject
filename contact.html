@@ -39,17 +39,26 @@
                 </div>
             
         </section>
+        <form action="contact.php" method="post"></form>
         <section class="row">
             <div class="column">
-                <form action="contact.php" method="post">
+                
   <div class="elem-group">
     <label for="name">Your Name</label>
     <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\sa-z]{3,20}" required>
   </div>
+</div>
+</section>
+<section class="row">
+<div class="column">
   <div class="elem-group">
     <label for="email">Your E-mail</label>
     <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
   </div>
+  </div>
+  </section>
+  <section class="row">
+    <div class="column">
   <div class="elem-group">
     <label for="department-selection">Choose Reason For Contacting Us</label>
     <select id="department-selection" name="reason_for_contact" required>
@@ -59,16 +68,24 @@
         <option value="Other">Other</option>
     </select>
   </div>
-  
+  </div>
+  <div class="column">
   <div class="elem-group">
     <label for="message">Write your message</label>
-    <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+    <textarea id="message" name="visitor_message" placeholder="Please write your message here." required></textarea>
   </div>
-  <button type="submit">Send Message</button>
-   <button type="reset">Reset</button>
+  </section>
+  <section class="row">
+    <div class="column">
+  <button type="submit" class="myButton">Send Message</button>
+  </div>
+  <div class="column">
+   <button type="reset" class="myButton">Reset</button>
+   </div>
+   </section>
 </form>
-            </div>
-        </section>
+           
+     
 			
 		<!--footer start-->
     <footer class="row">
@@ -97,7 +114,7 @@
       </div>
       
   </footer>
-
+          </div>
         </div>
 	</body>
 </html>

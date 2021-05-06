@@ -172,6 +172,60 @@ footer a:hover {
   margin-top: 80px;
 }
 
+.elem-group *:focus {
+  outline: none !important;
+}
+
+.elem-group input[type=text] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+
+.elem-group input[type=email] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+
+.elem-group input {
+  width: 80%;
+}
+
+.elem-group input, .elem-group textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.elem-group textarea {
+  margin: 10px 0;
+  width: 60%;
+  resize: vertical;
+  padding: 15px;
+  border-radius: 15px;
+  border: 0;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+  height: 150px;
+}
+
+.elem-group select {
+  margin: 10px 0;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.elem-group label {
+  display: block;
+}
+
 @media screen and (max-width: 980px) {
   .row .column {
     margin-bottom: 5px;

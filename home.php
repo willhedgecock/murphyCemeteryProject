@@ -52,7 +52,7 @@ check_loggedin($pdo);
 	</section>
     <section class="row">
             <div class="column">
-                <img src="images/murphyCemetery-6.jpg" alt="">
+                <img src="images/murphyCemetery-6.jpg" alt="murphy cemetery big tree">
             </div>
             <div class="column">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore pariatur illum nisi fugit aperiam enim dolorum ratione, molestias magni hic natus tenetur, dolorem adipisci eius sequi quasi accusamus. Vero, consequuntur provident aliquam odit quidem corrupti! Veniam expedita provident voluptatum, delectus rerum nemo consequatur commodi esse ipsam vero officiis voluptates, tempore repellat culpa, molestias iusto! Itaque placeat eius quod animi libero quis vero qui deleniti est nam quae architecto laudantium non expedita ab possimus accusamus assumenda, explicabo, saepe ex aut nisi quisquam odio. Eveniet, quibusdam minus veritatis illum voluptate id officia quae repellendus ipsam, corrupti, iure totam maiores tempora aliquam fuga.</p>
