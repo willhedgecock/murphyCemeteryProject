@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Murphy Cemetery</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/nav.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/structure.css">
+		<link rel="stylesheet" href="css/contactForm.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body class="loggedin">
+        <div class="wrapper">
+            
+	<nav>
+        <input type="checkbox" id="nav-toggle">
+        <div class="logo">Murphy Cemetery</div>
+        <ul class="links">
+          <li><a href="tpl/home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="find-grave.php">Find a Grave</a></li>
+          <li><a href="index.php">Login</a></li>
+			
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+   
+   
+		<section class="row">
+            
+                <div class="imageBackground">
+                <h1>Contact</h1>
+                </div>
+            
+        </section>
+        <section class="row">
+            <div class="column">
+<form action="contact.php" method="post">
+	<h2>Please let us know how we can help!</h2>
+	<div class="elem-group">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\sa-z]{3,20}" required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail:</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="department-selection">Choose Reason For Contacting Us:</label>
+	  <br>
+    <select id="department-selection" name="reason_for_contact" required>
+        <option value="">--- select one ---</option>
+        <option value="Buy Plot">Buy a Plot</option>
+        <option value="Schedule a Service">Schedule a Service</option>
+        <option value="Other">Other</option>
+    </select>
+  </div>
+  
+  <div class="elem-group">
+    <label for="message">Write your message:</label>
+	  <br>
+    <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+  </div>
+  <button type="submit" class="myButton">Send Message</button>
+	<br>
+   <button type="reset" class="myButton">Reset</button>
+</form>
+            </div>
+        </section>
+			
+		<!--footer start-->
+    <footer class="row">
+      <div class="column">
+      
+  <div class="footerNav">
+      <a href="tpl/home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="find-grave.php">Find a Grave</a>
+      <a href="index.php">Login</a>
+  
+  </div>
+
+  
+      </div>
+      <div class="column">
+          <h3>Murphy Cemetery</h3>
+          <p>Nevada, IA 50201</p>
+          <p>Lat:   42.0569°   (42° 3' 24")</p>
+          <p>Lon:   -93.3674°   (-93° 22' 2")</p>
+      </div>
+      <div class="column">
+
+      </div>
+      
+  </footer>
+
+        </div>
+	</body>
+</html>

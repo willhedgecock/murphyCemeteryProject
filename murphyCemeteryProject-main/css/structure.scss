@@ -1,0 +1,184 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EFE5DC;
+
+}
+
+.wrapper {
+    padding: 20px;
+    border: #343633 solid 1px;
+    max-width: 90%;
+    width: 85%;
+    margin: 20px auto;
+    background-color: #EFE5DC;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.55);
+    border-radius: 15px;
+
+}
+
+.imageBackground {
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/murphyCemetery-3-overlay.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.imageBackground h1 {
+    text-align: center;
+    padding-top: 8%;
+    color: white;
+    font-size: 200%;
+    text-shadow: 2px 2px black;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 31px;
+    margin-top: 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.paragraph p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: large;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    
+}
+
+.column {
+    flex: 1;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    margin-top: 10px;
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+
+}
+
+.column img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    border: #343633 solid 1px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.55);
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.divider {
+    border-top: #343633 solid 1px;
+    margin: 10px;
+}
+
+
+    footer {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: #343633;
+    border: 1px solid #343633;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    p {
+        color: #fff;
+        padding: 2px;
+    }
+
+    h3 {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.footerNav{
+    display: block;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 980px){
+    .row .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+    .row .column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .row .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .row .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
