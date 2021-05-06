@@ -99,7 +99,7 @@ if (strpos($sql, "burial_first_name", -21)) {
             </div>
         </section>
 
-        <section class="row records">
+        <section class="records">
 
         <?php
 
